@@ -1,0 +1,504 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:mintcream
+    font-family  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px #555;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color:auto;
+    padding: 10px;;
+    text-align:left;
+    margin: 50px;
+    max-width: 50%;
+
+}
+
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+    border-radius: 10%;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+}
+
+.hero-actions {
+    margin-top: 20px;
+    display: flex;
+}
+
+.explore-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.play-video {
+    background:mintcream;
+    border: none;
+    cursor:e-resize;
+    display: flex;
+    align-items: center;
+}
+
+.play-video img {
+    margin: 50px;
+}
+
+/* Video Section */
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    
+}
+
+.video video {
+    width: 50px;;
+    max-width: 50%;
+}
+
+/* Statistics Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
+    
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+    
+}
+
+.stat p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 200px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destination-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination-item a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Best Tours Section */
+.best-tours {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tour-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    width: 200px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.view-details-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+/* Easy Booking Steps Section */
+.steps {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Featured Tours Section */
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.featured-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.testimonial-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Newsletter Registration Section */
+.newsletter {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 200px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo h3 {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* Mobile First Approach */
+body {
+    font-size: 15px;
+}
+
+.container {
+    flex-direction: column;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero {
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.stats {
+    flex-direction: column;
+}
+
+.stat {
+    margin-bottom: 20px;
+}
+
+/* Responsive for Tablets */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .service-items, .destination-items, .tour-items, .steps-container {
+        justify-content: space-between;
+    }
+}
+
+/* Responsive for Large Screens */
+@media (min-width: 1024px) {
+    .hero h2 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .testimonial-item {
+        width: 250px;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Responsive for Extra Large Screens (Desktops) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 40px;
+    }
+
+    .hero {
+        padding: 150px 40px;
+    }
+
+    .steps-container, .tour-items, .featured-container {
+        justify-content: space-evenly;
+    }
+
+    .testimonial-item {
+        width: 300px;
+    }
+
+    .footer-social {
+        justify-content: flex-end;
+    }
+}
+
+/* Miscellaneous */
+.One {
+    width: auto;
+    height: 20px;
+    image-rendering: crisp-edges;
+}
+
+button.prev-btn,
+button.next-btn {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    max-height: 30px;
+    width: auto;
+}
+
+.video {
+    display: flex;
+    gap: 10px;
+}
+
+.video {
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+ 

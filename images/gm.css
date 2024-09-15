@@ -1,0 +1,334 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9e6; /* Buttercream */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1e90ff; /* Seabreeze */
+    padding: 20px;
+    border-bottom: 1px solid #1c86ee; /* Darker shade of Seabreeze */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav .menu a {
+    color: #ffeb99; /* Buttercream */
+    text-decoration: none;
+}
+
+nav .menu a:hover {
+    text-decoration: underline;
+}
+
+.auth button {
+    background-color: #ffeb99; /* Buttercream */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.auth button:hover {
+    background-color: #f7e7a0; /* Darker Buttercream */
+}
+
+/* Responsive styling for Login and Sign Up buttons */
+@media (max-width: 576px) {
+    .auth {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .auth button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Hero Section */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e90ff; /* Seabreeze */
+}
+
+.hero {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.video-slide {
+    flex: 1;
+}
+
+.video-slide iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+/* Scroll Animation Styles */
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Buttons */
+.cta button {
+    background-color: #1e90ff; /* Seabreeze */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #1c86ee; /* Darker Seabreeze */
+    transform: scale(1.05);
+}
+
+.cta button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #1e90ff; /* Seabreeze */
+}
+
+/* Statistics, Services, and Other Sections */
+.statistics, .services, .looking-for, .testimonials {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.statistic, .service, .looking-for-option, .testimonial {
+    text-align: center;
+    margin: 10px;
+    min-width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.statistic h2 {
+    color: #1e90ff; /* Seabreeze */
+}
+
+.service img, .testimonial img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1e90ff; /* Seabreeze */
+    padding: 20px;
+    border-top: 1px solid #1c86ee; /* Darker Seabreeze */
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-quote {
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Footer Social Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-social .social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social .social-icon img:hover {
+    opacity: 0.7;
+}
+
+/* Responsive adjustments for footer and social icons */
+@media (max-width: 576px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-quote {
+        text-align: center;
+    }
+
+    .footer-social .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav li {
+        margin: 5px 0;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #1e90ff; /* Seabreeze */
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #1c86ee; /* Darker Seabreeze */
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fff;
+    color: #333;
+}
+
+.modal-content button {
+    background-color: #1e90ff; /* Seabreeze */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #1c86ee; /* Darker Seabreeze */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistics {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .statistic {
+        margin: 10px 0;
+    }
+
+    .service, .looking-for-option, .testimonial {
+        width: 100%;
+        max-width: none;
+    }
+
+    .video-slide iframe {
+        height: auto;
+    }
+}
